@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&display=swap');
+
+:root{
+   --color-primario: black ;
+   --color-secundario: #e09898; 
+   --color-terciario:#b83762; 
+
+   --fuente-Cedarville: "Cedarville cursive", cursive;
+   --fuente-caveat: "Caveat";
+
+
+}
+* {
+    padding: 0;
+    margin:  0;
+}
+body {
+    
+   background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+
+.header{
+ padding: 2% 0% 0% 15%;
+
+}
+
+
+.header__menu{
+   display: flex;
+   gap: 80px;
+
+}
+
+
+.header__menu__link{
+   font-family: "Bettie";
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   color:var(--color-terciario);
+}
+
+.header__menu__link:hover{
+   font-size: 2.2rem;
+   font-family: 'Times New Roman', serif;
+   color: blanchedalmond;
+}
+.apellidos {
+    color: #254b92
+}
+
+ .presentacion{
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    justify-content: space-between;
+    gap: 82px;
+ }
+
+ .presentacion__contenido {
+     width: 50%; 
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+ }
+
+ .presentacion__contenido__titulo {
+    font-size: 2.3 rem;
+    font-family:var(--fuente-Cedarville);
+ }
+ 
+ .presentacion__contenido__texto {
+    font-size: 1.25rem;
+    font-family: "Caveat", cursive;  
+ }
+ .presentacio__enlaces {
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    align-items: center;
+    gap: 35px;  
+    
+ }
+
+ .presentacion__redes__subtitulo{
+   font-family: "Jenna Sue";
+   font-size: 1.75rem;
+   font-weight: 500;
+ }
+
+ .link__redessociales {
+    width: 80%;
+    background-color: rgb(221, 189, 217);
+    text-align: center;
+    padding: 21.5 0;
+    border-radius: 16px;
+    font-family: cursive;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #b83762;
+    text-decoration: none;
+    border: 2px solid #b83762;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .link__redessociales:hover{
+   background-color: aliceblue;
+ }
+
+ .presentacion__imagen{
+   width: 50%;
+ }
+
+ .footer{
+   background-color: #e09898;
+   padding: 8px;
+   color: azure;
+   text-align: center;
+   font-family: "Bettie";
+   font-size: medium;
+   font-weight: 500;
+ }
+
+ @media(max-width:1200px ){
+
+   .header{
+      padding: 10%;
+   }
+
+   .header__menu{
+      justify-content: center;
+   }
+  
+   .presentacion {
+      flex-direction:column-reverse;
+      padding: 5%;
+   }
+   .presentacion__contenido{
+      width: auto;
+   }
+ }
